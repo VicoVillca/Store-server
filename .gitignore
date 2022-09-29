@@ -32,3 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 node_modules
+
+### Spring boot ###
+target/
+.settings/
+.mvn/
