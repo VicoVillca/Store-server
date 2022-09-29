@@ -1,7 +1,6 @@
 package com.example.demo.controllers;
 
 import com.example.demo.dao.ProductosRepository;
-import com.example.demo.models.Categories;
 import com.example.demo.models.Productos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,9 +22,10 @@ public class ProductosController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public void Insert(@RequestBody Productos productos){
-
+    public Productos Insert(@RequestBody Productos productos){
+        System.out.println(productos);
         productosRepository.save(productos);
+        return productos;
     }
     @RequestMapping(value = "{id}",method = RequestMethod.DELETE)
     public ResponseEntity<String> Delete(@PathVariable Integer id){

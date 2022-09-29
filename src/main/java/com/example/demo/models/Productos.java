@@ -1,6 +1,8 @@
 package com.example.demo.models;
 
 
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
@@ -11,23 +13,30 @@ import javax.persistence.*;
 public class Productos {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @Getter
+    @Setter
     @Column (name = "id")
     private Integer id;
 
-    @Column (name = "nombre")
-    private String nombre;
+    @Getter @Setter
+    @Column (name = "name")
+    private String name;
 
+    @Getter @Setter
     @Column(name = "price")
     private double price;
 
-    @Column (name="descripcion")
-    private double dscripcion;
+    @Getter @Setter
+    @Column (name="description")
+    private String description;
 
+    @Getter @Setter
     @Column (name = "categoryId")
     private Integer categoryId;
 
-    @Column(name = "stok")
-    private Integer stok;
+    @Getter @Setter
+    @Column(name = "stock")
+    private Integer stock;
 
 
 
