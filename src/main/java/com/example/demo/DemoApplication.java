@@ -11,9 +11,9 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		System.out.println("*-------------------------*");
-		System.out.println("*  Saludos desde Heroku!! *");
-		System.out.println("*-------------------------*");
+		System.out.println("*--------------------------------*");
+		System.out.println("*  Saludos desde Heroku weeee !! *");
+		System.out.println("*--------------------------------*");
 	}
 	@Bean
 	public WebMvcConfigurer corsConfigurer() {

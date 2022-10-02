@@ -29,7 +29,7 @@ public class ProductosController {
     }
     @RequestMapping(value = "{id}",method = RequestMethod.DELETE)
     public ResponseEntity<String> Delete(@PathVariable Integer id){
-
+        System.out.println("numeros  = "+id);
         if(productosRepository.existsById(id)){
             Productos productos  = productosRepository.findById(id).get();
             productosRepository.delete(productos);
