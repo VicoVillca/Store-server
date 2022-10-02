@@ -31,17 +31,17 @@
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency> -->
 
-		<!--dependency>
+		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
-		</dependency-->
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-		<dependency>
+		<!--dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>42.5.0</version>
-		</dependency>
+		</dependency-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

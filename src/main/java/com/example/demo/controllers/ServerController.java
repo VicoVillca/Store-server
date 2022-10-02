@@ -9,6 +9,7 @@ public class ServerController {
 
     @RequestMapping(value = "server/stores", method = RequestMethod.GET)
     public String getStores() {
+        console.log("Holap weee get Stores");
         return "[\n" +
                 "    {\n" +
                 "      \"id\": 1,\n" +
